@@ -1,12 +1,14 @@
-//conde snnippts for rfc to set up functional component
+import React, { Component } from 'react';
 
-import React from 'react';
-
-export default function Book() {
-    return (
-        <article>
-            <h3>book:</h3>
-            <h3>author:</h3>
-        </article>
-    )
+export default class Book extends Component {
+    render() {
+        //console.log(this.props);
+        const { book, author } = this.props.book;
+        return (
+            <article>
+                <h3>book : {book}</h3>
+                <h5>author : {author}</h5>
+            </article>
+        )
+    }
 }
