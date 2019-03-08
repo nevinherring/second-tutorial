@@ -2,14 +2,11 @@
 //only one default export module
 
 import React from "react";
-import { name, age, person } from './data';
 
 const App = () => (
   <section>
-    <p>{name}</p>
-    <p>{age}</p>
-    <p>{person.name}</p>
+    <h1>This is our Application</h1>
   </section>
-);
+)
 
 export default App;
