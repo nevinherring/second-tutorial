@@ -11,15 +11,15 @@ export default class Book extends Component {
 
 
     addCount = () => {
-        console.log('you clicked me');
+        this.setState({ count: this.state.count + 1 });
     }
 
     lowerCount = () => {
-        console.log('you clicked me');
+        this.setState({ count: this.state.count - 1 });
     }
 
     resetCount = () => {
-        console.log('you clicked me');
+        this.setState({ count: 0 });
     }
 
     render() {
@@ -31,6 +31,7 @@ export default class Book extends Component {
                 <div>
                     <h4>book : {book}</h4>
                     <h6>author : {author}</h6>
+                    <h3>count: {this.state.count}</h3>
                     <button type="button" onClick={this.addCount}>
                         Add Count
                     </button>
