@@ -1,28 +1,24 @@
 const books = [
     {
         id: 1,
-        book: "book number one",
-        author: "john doe"
+        img:
+            "https://m.media-amazon.com/images/I/817CteSzxqL._AC_UL436_.jpg",
+        title: "The Gardens of the Moon",
+        author: "Steven Erikson"
     },
     {
         id: 2,
-        book: "book number two",
-        author: "bobby doe"
+        img:
+            "https://m.media-amazon.com/images/I/81xAF-yaxaL._AC_UL436_.jpg",
+        title: "The Deadhouse Gates",
+        author: "Steven Erikson"
     },
     {
         id: 3,
-        book: "book number three",
-        author: "peter doe"
-    },
-    {
-        id: 4,
-        book: "book number four",
-        author: "philip doe"
-    },
-    {
-        id: 5,
-        book: "book number five",
-        author: "charles doe"
+        img: "https://m.media-amazon.com/images/I/91vlhlzzktL._AC_UL436_.jpg",
+
+        title: "Memories of Ice",
+        author: "Steven Erikson"
     }
 ]
 
