@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Buttons';
 
 export default class Book extends Component {
     constructor(props) {
@@ -8,39 +9,17 @@ export default class Book extends Component {
         }
         //this.handleClick = this.handleClick.bind(this); not needed when using arrow function below
     }
-
-
-    addCount = () => {
-        this.setState({ count: this.state.count + 1 });
-    }
-
-    lowerCount = () => {
-        this.setState({ count: this.state.count - 1 });
-    }
-
-    resetCount = () => {
-        this.setState({ count: 0 });
-    }
-
     render() {
         //console.log(this.props);
-        const { img, book, author } = this.props.info;
+        const { img, title, author } = this.props.info;
+        const { handleDelete } = this.props;
         return (
             <article className="book">
                 <img src={img} width="150" alt="book" />
                 <div>
-                    <h4>book : {book}</h4>
+                    <h4>Title : {title}</h4>
                     <h6>author : {author}</h6>
-                    <h3>count: {this.state.count}</h3>
-                    <button type="button" onClick={this.addCount}>
-                        Add Count
-                    </button>
-                    <button type="button" onClick={this.resetCount}>
-                        Reset Count
-                    </button>
-                    <button type="button" onClick={this.lowerCount}>
-                        Lower Count
-                    </button>
+                    <Button handleDelete={handleDelete} />
                 </div>
             </article>
         )
